@@ -3,8 +3,8 @@ def add(*args):
     # summa = sum(args)
     # return summa
     for i in args:
-        summa += i + i
-     return summa
+        summa += i + 1
+    return summa
 
 
 result = add(2, 3, 4, 5)
