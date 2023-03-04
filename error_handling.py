@@ -1,19 +1,19 @@
 # File not found
-try:
-    file = open('fila.txt')
-    text = 'abc'
-    print(text)
-except FileNotFoundError:
-    file = open('fila.txt', 'w')
-    file.write('lorem ipsum dolor amos compas')
-except TypeError as error_message:
-    print(error_message)
-else:
-    content = file.read()
-    print(content)
-finally:
-    file.close()
-    print('file is closed')
+# try:
+#     file = open('fila.txt')
+#     text = 'abc'
+#     print(text)
+# except FileNotFoundError:
+#     file = open('fila.txt', 'w')
+#     file.write('lorem ipsum dolor amos compas')
+# except TypeError as error_message:
+#     print(error_message)
+# else:
+#     content = file.read()
+#     print(content)
+# finally:
+#     s = ('smth')
+#     raise PermissionError(s)
 
 # Key ERROR
 # a_dictionary = {'key': 'value'}
@@ -26,5 +26,15 @@ finally:
 # Type ERROR
 # text = 'abc'
 # print(text + 5)
+
+
+height = float(input('Height: '))
+weight = int(input('Weight: '))
+
+if height > 3:
+    raise TypeError('Human HEIGHT is not more than 3 meters!')
+
+bmi = weight / (height ** 2)
+print(bmi)
 
 
